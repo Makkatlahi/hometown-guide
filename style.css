@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(212, 19%, 82%);
+  /* max-width: 720px; */
+  /* margin: 0 auto; */
+}
+
+/*----------Header----------*/
+.header {
+  background-image: url("./tumon-bay.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__title {
+  color: rgb(242, 253, 244);
+  /* background-color: rgba(164, 188, 214, 0.8); */
+  /* background-color: rgb(90, 119, 88); */
+  background-color: rgba(78, 102, 123, 0.8);
+
+  padding: 1rem;
+  border-radius: 1rem;
+  text-shadow: 4px 2px 1px rgb(14, 16, 21);
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.header__title span {
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.header__title span:hover {
+  cursor: pointer;
+  transform: scale(1.3) translateY(-10px);
+  color: whitesmoke;
+}
+
+.header__subtitle {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0.5px black;
+  width: 500px;
+  font-weight: 700;
+  color: rgb(242, 253, 244);
+  /* background-color: rgba(87, 106, 123, 0.8); */
+  background-color: rgba(26, 104, 77, 0.6);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/*----------Main----------*/
+.activities-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #a4bcd6; */
+  background-color: rgb(66, 105, 126);
+  color: rgb(235, 240, 243);
+  /* font-family: "Rubik Dirt", sans-serif; */
+}
+
+.activities-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  /* text-shadow: 2px 2px 1px rgb(14, 16, 21); */
+}
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  /* border: 1px solid black; */
+  width: 198px;
+  height: 300px;
+  text-align: center;
+}
+
+.feature-link {
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  /* text-shadow: 2px 2px 1px rgb(14, 16, 21); */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+}
+
+#night-market,
+#karera_show,
+#tumon_bay_beach {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  /* display: block; */
+  margin-bottom: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+#night-market:hover,
+#karera_show:hover,
+#tumon_bay_beach:hover {
+  transform: scale(1.8);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.guide {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 20px;
+  width: 400px;
+  margin: 2rem auto;
+  background-color: rgb(61, 120, 93);
+  border-radius: 0.5rem;
+  color: rgb(248, 248, 248);
+  border-bottom: 10px solid rgb(55, 104, 128);
+}
+
+.guide-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*Image of Sean*/
+#guide-img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+#guide-img:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
