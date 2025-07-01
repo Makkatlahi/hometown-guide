@@ -170,3 +170,52 @@ body {
   transform: scale(1.4);
   cursor: pointer;
 }
+
+@media (min-width: 900px) {
+  .header {
+    height: 500px;
+  }
+  .header__title {
+    font-size: 4rem;
+  }
+  .header__subtitle {
+    font-size: 2rem;
+    width: 700px;
+  }
+
+  .activities-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    /* text-shadow: 2px 2px 1px rgb(14, 16, 21); */
+  }
+  .feature {
+    margin: 40px;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+  }
+
+  .feature-title {
+    font-size: 1.4rem;
+    /* text-shadow: 2px 2px 1px rgb(14, 16, 21); */
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .feature-description {
+    font-size: 1.1rem;
+  }
+
+  #night-market,
+  #karera_show,
+  #tumon_bay_beach {
+    width: 200px;
+    height: 200px;
+  }
+
+  .guide {
+    width: 500px;
+  }
+}
